@@ -4,14 +4,13 @@ class CarsController < ApplicationController
     render json: cars.as_json
   end
   def create
-    car = Car.new(
-    make: "Honda",
-    model: "Corolla",
-    year: "2013",
-    price: 12000,
-    color: "tan"
+    car = Car.create(
+    make: params[:input_make],
+    model: params[:input_model],
+    year: params[:input_year],
+    price: params[:input_price],
+    color: params[:input_color]
     )
-    car.save
     render json: car.as_json
   end
 

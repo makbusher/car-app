@@ -3,3 +3,12 @@ GET http://localhost:3000/cars.json
 
 ### cars create
 POST http://localhost:3000/cars.json
+Content-Type: application/json
+
+{
+  "input_make": "Test",
+  "input_model": "Test",
+  "input_year": "Test",
+  "input_price": 0,
+  "input_color": "Test"
+}
