@@ -15,3 +15,15 @@ Content-Type: application/json
 
 ### cars show 
 GET http://localhost:3000/cars/4.json
+
+### cars update
+PATCH http://localhost:3000/cars/3.json
+Content-Type: application/json
+
+{
+  "make": "Honda",
+  "model": "Civic",
+  "year": "1999",
+  "price": 5000,
+  "color": "green"
+}
