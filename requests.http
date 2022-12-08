@@ -12,3 +12,6 @@ Content-Type: application/json
   "input_price": 0,
   "input_color": "Test"
 }
+
+### cars show 
+GET http://localhost:3000/cars/4.json

@@ -3,6 +3,7 @@ class CarsController < ApplicationController
     cars = Car.all
     render json: cars.as_json
   end
+
   def create
     car = Car.create(
     make: params[:input_make],
@@ -11,6 +12,11 @@ class CarsController < ApplicationController
     price: params[:input_price],
     color: params[:input_color]
     )
+    render json: car.as_json
+  end
+
+  def show
+    car = Car.find_by(id:params[:id])
     render json: car.as_json
   end
 
