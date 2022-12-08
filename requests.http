@@ -1,0 +1,4 @@
+### cars index
+GET http://localhost:3000/cars.json
+
+### cars create
