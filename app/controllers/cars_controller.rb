@@ -32,4 +32,10 @@ class CarsController < ApplicationController
     render json: car.as_json
   end
 
+  def destroy
+    car = Car.find_by(id:params[:id])
+    car.destroy
+    render json: {message: "This car was deleted"}
+  end
+
 end

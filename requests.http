@@ -27,3 +27,6 @@ Content-Type: application/json
   "price": 5000,
   "color": "green"
 }
+
+### cars destroy
+DELETE http://localhost:3000/cars/5.json
